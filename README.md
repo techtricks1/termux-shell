@@ -1,6 +1,6 @@
 
 
-#TERMUX Parrot Shell
+TERMUX Parrot Shell
 Beautify your Termux 😍
 [+] Installation & Usage
 apt update
