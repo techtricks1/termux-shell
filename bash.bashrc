@@ -5,14 +5,14 @@ command_not_found_handle() {
 PS1='\[\e[31m\]┌─[\[\e[37m\]\T\[\e[31m\]]─────\e[1;93m[eshwar]\e[0;31m───[\#]\n|\n\e[0;31m└─[\[\e[31m\]\e[0;35m\W\[\e[31m\]]────►\e[1;92m'
 
 clear
-echo -e "Created By \e[techtricks1"
+echo -e "Created By \e[5mtechtricks"
 echo "----------------------------" | lolcat
 echo -e "\e[1mInstagram :@techtricks"
 echo -e "\e[1mGithub: github.com/techtricks1/"
 echo "----------------------------" | lolcat
 echo "
-+-+-+-+-+-+-+-+
-|W|e|l|c|o|m|e|
-+-+-+-+-+-+-+-+ " | lolcat
+#####################
+|T|E|C|H|T|R|I|C|K|S|
+##################### " | lolcat
 date | lolcat
 echo ""
