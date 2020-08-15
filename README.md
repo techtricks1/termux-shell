@@ -26,6 +26,13 @@ chmod +x *
 ```bash
 sh install.sh
 ```
+
+Or Use single command
+
+```bash
+apt update && apt install git -y && git clone https://github.com/techtricks1/termux-shell.git && cd termux-shell && chmod +x * && sh install.sh
+```
+
 Now exit from termux
 ```bash
 exit
