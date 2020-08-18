@@ -9,7 +9,7 @@ echo -e "Created By \e[5mTECH-TRICKS"
 echo "----------------------------" | lolcat
 echo -e "\e[1mInstagram :@tech_tricks_1"
 echo -e "\e[1mGithub: github.com/techtricks1/"
-echo -e "\e[1mYoutube:Tech Tricks (https://www.youtube.com/channel/UCC3FGIrJwhIKHA2xZZIEM8w)"
+echo -e "\e[1mYouTube:Tech Tricks (https://www.youtube.com/channel/UCC3FGIrJwhIKHA2xZZIEM8w)"
 echo "----------------------------" | lolcat
 echo "
 #####################
