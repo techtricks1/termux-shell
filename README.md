@@ -33,11 +33,11 @@ Or Use single command
 apt update && apt install git -y && git clone https://github.com/techtricks1/termux-shell.git && cd termux-shell && chmod +x * && sh install.sh
 ```
 
-Now exit from termux
+Now restart your termux app
 ```bash
-exit
+login
 ```
-And now restart your termux app
+
 The termux shell is completely chenged
 
 ### Find Me on :
