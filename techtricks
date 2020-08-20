@@ -50,7 +50,7 @@
     }
     credits() {
         printf "#-------------------------------------------"
-        printf "\e[44mCreator & devoloper\e[0m : \e[46mm@eshwargajula\e[0m\n"
+        printf "\n\e[44mCreator & devoloper\e[0m : \e[46mm@eshwargajula\e[0m\n"
         printf "\e[44mDevoloper \e[0m: \e[42m@SaicaranKAndukuri\e[0m\n"
         printf "#-------------------------------------------\n"
     }
