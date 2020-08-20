@@ -10,6 +10,15 @@ chmod +x install.sh
 ./install.sh
 ```
 The termux shell style gets changed!!
+# Usage
+###### To reinstall after cloning
+```bash
+techtricks -i
+```
+###### To restore you old bashrc
+```bash
+techtricks --restore
+```
 
 ### Find Me on :
 > Instagram : @tech_tricks_1
