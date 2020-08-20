@@ -1,0 +1,109 @@
+#!/data/data/com.termux/files/usr/bin/bash
+    TPREFIX=/data/data/com.termux/files
+    pwd=`pwd`
+    backup() {
+        if [ ! -d $TPREFIX/home/Techtricks ]; then
+        mkdir -p $TPREFIX/home/Techtrics
+        fi
+       # rm -rf .bashrc
+       # rm -rf bash.bashrc
+        if [ -r $TPREFIX/home/.bashrc ]; then
+        mv ~/.bashrc $TREFIX/home/Techtricks
+        fi
+        if [ -r $TPREFIX/usr/etc/bash.bashrc ]; then
+        mv $TPREFIX/usr/etc/bash.bashrc $TPREFIX/home/Techtricks
+        fi
+    }
+    restore() {
+     if [ -r $TPREFIX/home/.bashrc ]; then
+        if [ -r $TPREFIX/home/Techtricks/.bashrc ]; then
+          rm -rf $TPREFIX/home/.bashrc
+          cp $TPREFIX/home/Techtricks/.bashrc $TPREFIX/home/
+          source $TPREFIX/home/.bashrc
+          x=1
+          else
+          x=0
+          fi
+        fi
+        if [ -r $TPREFIX/usr/etc/bash.bashrc ]; then
+        if [ -r $TPREFIX/home/Techtricks/bash.bashrc ]; then
+          x=1
+         rm -rf $TRPREFIX/usr/etc/bash.bashrc
+        cp $TPREFIX/home/Techtricks/bash.bashrc $TPREFIX/usr/etc/
+        source $TPREFIX/usr/etc/bash.bashrc
+          else
+          x=0
+         fi
+        fi
+        case $x in
+        1)
+        printf "\n[*] Restoration done \nRestart termux to see changes... "
+        ;;
+        0)
+        printf "\e[1;31m\n[?] Error | No backup found \e[0m"
+        exit
+        ;;
+        esac
+
+        
+
+    }
+    credits() {
+        printf "-------------------------------------------"
+        printf "\e[44mCreator & devoloper\e[0m : \e[46mm@eshwargajula\e"
+        printf "\e[44mDevoloper \e[0m: \e[42m@SaicaranKAndukuri\e[0m"
+        printf "-------------------------------------------"
+    }
+    install() {
+        pwd=`pwd`
+        if [ ! -r $TPREFIX/usr/bin/techtricks ]; then
+         cp $TPREFIX/home/termux-shell/techtricks $TPREFIX/usr/bin 
+         chmod 777 $TPREFIX/usr/bin/techtricks
+         else
+         printf "...."
+         fi
+       
+          echo "
+          »»»»»»»»»»»»»»»
+          |W|E|L|C|O|M|E|
+          ««««««««««««««« " | lolcat
+          date | lolcat
+
+          printf "\n[*] Making necessasry backups..."
+          backup
+          printf "\n[%] Installing... "
+          rm -rf $TPREFIX/usr/etc/bash.bashrc
+          cp $TPREFIX/home/termux-shell/bash.bashrc $TREFIX/usr/etc
+          printf "\n[^] Checking presence.."
+          if [ -r $TPREFIX/usr/etc/bash.bashrc ]; then
+          printf "   [\e[1;32m OK \e[0m]\n"
+          fi
+          printf "\n[^] Setting up ...."
+          source /data/data/com.termux/files/usr/etc/bash.bashrc
+           echo "
+          »»»»»»»»»»»
+          |E|N|J|O|Y|
+          ««««««««««« " | lolcat
+          date | lolcat
+          credits
+
+    }
+    help() {
+        echo -e "\n\e[44m USAGE ....\n\e[0m"
+        echo -e "\e[93m          techtricks --help \e(0m\e[34m(To show this help)\e[0m\n"
+        echo -e "\e[93m          techtricks -i \e[34m(To install style)\e[0m\n"
+        echo -e "\e[93m          techtricks --backup \e[34m(to perform backup of existing bashrc file!!!\n"
+        echo -r "\e[93m          techtricks --restore \e[34m(To restores backed up bashrc file)\e[0m\n" 
+        credits                                                  
+    }
+    case $1 in
+          -h| --help) help;;
+          -i| --install) install;;
+          -b| --backup) backup;;
+          -r| --restore) restore;;
+          *)
+          printf "\n\e[31mUnknown Usage : \e[33m$1\e[0m\n"
+          help
+          ;;
+    esac
+
