@@ -9,6 +9,10 @@ cd termux-shell
 chmod +x install.sh
 ./install.sh
 ```
+###### Finally
+```bash
+source /data/data/com.termux/files/usr/etc/bash.bashrc
+```
 The termux shell style gets changed!!
 # Usage
 ###### To reinstall after cloning
