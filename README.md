@@ -19,7 +19,23 @@ techtricks -i
 ```bash
 techtricks --restore
 ```
+###### To get help techticks -h
+```bash
 
+bash-5.0$ techtricks -h
+
+ USAGE ....
+          techtricks --help (To show this help)
+          techtricks -i (To install style)
+          techtricks --backup (to perform backup of existing bashrc file!!!
+          techtricks --restore (To restores backed up bashrc file)
+
+#-------------------------------------------
+Creator & devoloper : m@eshwargajula
+Devoloper : @SaicaranKAndukuri
+
+#-------------------------------------------
+```
 ### Find Me on :
 > Instagram : @tech_tricks_1
 
