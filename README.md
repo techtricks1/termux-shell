@@ -8,6 +8,7 @@ git clone https://github.com/techtricks1/termux-shell.git
 cd termux-shell
 chmod +x install.sh
 ./install.sh
+```
 The termux shell style gets changed!!
 
 ### Find Me on :
