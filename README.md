@@ -2,43 +2,13 @@
 Beautify your Termux 
 # Installation
 ```bash
-apt update
-```
-
-```bash
 apt install git -y
-```
-
-```bash
+cd $HOME
 git clone https://github.com/techtricks1/termux-shell.git
-```
-Now termux-shell is installed
-# Usage
-
-```bash
 cd termux-shell
-```
-
-```bash
-chmod +x *
-```
-
-```bash
-sh install.sh
-```
-
-Or Use single command
-
-```bash
-apt update && apt install git -y && git clone https://github.com/techtricks1/termux-shell.git && cd termux-shell && chmod +x * && sh install.sh
-```
-
-Now restart your termux app
-```bash
-login
-```
-
-The termux shell is completely chenged
+chmod +x install.sh
+./install.sh
+The termux shell style gets changed!!
 
 ### Find Me on :
 > Instagram : @tech_tricks_1
