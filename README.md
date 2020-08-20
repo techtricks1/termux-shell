@@ -31,7 +31,7 @@ bash-5.0$ techtricks -h
           techtricks --restore (To restores backed up bashrc file)
 
 #-------------------------------------------
-Creator & devoloper : m@eshwargajula
+Creator & devoloper : @eshwargajula
 Devoloper : @SaicaranKAndukuri
 
 #-------------------------------------------
