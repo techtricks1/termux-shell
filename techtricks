@@ -49,10 +49,10 @@
 
     }
     credits() {
-        printf "-------------------------------------------"
-        printf "\e[44mCreator & devoloper\e[0m : \e[46mm@eshwargajula\e"
-        printf "\e[44mDevoloper \e[0m: \e[42m@SaicaranKAndukuri\e[0m"
-        printf "-------------------------------------------"
+        printf "#-------------------------------------------"
+        printf "\e[44mCreator & devoloper\e[0m : \e[46mm@eshwargajula\e[0m\n"
+        printf "\e[44mDevoloper \e[0m: \e[42m@SaicaranKAndukuri\e[0m\n"
+        printf "#-------------------------------------------\n"
     }
     install() {
         pwd=`pwd`
@@ -73,7 +73,7 @@
           backup
           printf "\n[%] Installing... "
           rm -rf $TPREFIX/usr/etc/bash.bashrc
-          cp $TPREFIX/home/termux-shell/bash.bashrc $TREFIX/usr/etc
+          cp $TPREFIX/home/termux-shell/bash.bashrc $TPREFIX/usr/etc
           printf "\n[^] Checking presence.."
           if [ -r $TPREFIX/usr/etc/bash.bashrc ]; then
           printf "   [\e[1;32m OK \e[0m]\n"
