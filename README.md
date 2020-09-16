@@ -1,6 +1,6 @@
-<h1>TERMUX Parrot Shell<h1>
+# TERMUX Parrot Shell
 Beautify your Termux 
-<h3>Installation<h3>
+### Installation
 ```bash
 apt install git -y
 cd $HOME
