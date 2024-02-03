@@ -36,7 +36,6 @@ bash-5.0$ techtricks -h
 
 #-------------------------------------------
 Creator & devoloper : @eshwargajula
-Devoloper : @SaicaranKAndukuri
 
 #-------------------------------------------
 ```
